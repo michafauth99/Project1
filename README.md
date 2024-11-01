@@ -63,12 +63,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+First we have to set up a conda environment with all the necessary packages:
+
 * Install conda environment with all requirements
   ```sh
     conda create --name Project1 --file requirements.txt
   ```
-* If neccessary install this version with pip inside the conda env
+* If necessary install this version with pip inside the conda env
   ```sh
     pip install opencv-contrib-python==4.5.5.64
   ```
