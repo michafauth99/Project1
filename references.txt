@@ -1,0 +1,5 @@
+
+boustrophedon_moving_average background extraction:
+
+http://kiwi.bridgeport.edu/cpeg585/Algorithms_for_Image_Processing_and_Computer_Vision.pdf
+https://research-repository.griffith.edu.au/server/api/core/bitstreams/b7f9d0e5-0741-522f-af46-e7ac48302c5f/content
