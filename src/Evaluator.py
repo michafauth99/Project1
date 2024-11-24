@@ -164,6 +164,9 @@ class Evaluator:
     
     def get_RMSE(self, actual_nr, pred_nr):
         return np.sqrt((actual_nr - pred_nr) ** 2)
+    
+    def get_accuracy(self):
+        return (self.TP / (self.TP  + self.FP))*100 if self.TP  + self.FP > 0 else 100
 
     def get_confusion_matrix(self):
        
