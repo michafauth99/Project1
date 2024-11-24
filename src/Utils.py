@@ -258,9 +258,7 @@ def draw_result(image, tp_boxes, tp_points, fp_boxes, fn_points):
     for x, y in fn_points:
         cv2.circle(image_result, (x, y), 3, (0, 0, 255), 2)
 
-    plt.figure(figsize=(12, 6))
-    plt.imshow(image_result)
-    plt.show()
+    return image_result
 
 def print_evaluation(eval, actual_persons):
     conf_matrix = eval.get_confusion_matrix()
