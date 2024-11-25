@@ -83,7 +83,35 @@ First we have to set up a conda environment with all the necessary packages:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Our project is structured as follows:
+
+```
+project1/
+├── data/
+│   ├── images/
+│   ├── labels/
+├── results/
+│   ├── grid_search/
+│   ├── images/
+├── src/
+│   ├── Evaluator.py
+│   ├── Utils.py
+├── testing/
+├── GRIDSEARCH.ipynb
+├── PIPELINE.ipynb
+```
+To run the project, simply execute the `PIPELINE.ipynb` notebook. This will process all images in the `data/images/` directory and save the results in the `results/images/` folder.
+
+The current parameters used for processing are pre-tuned based on our extensive grid search. However, you are free to modify them as needed. For trying out more and different parameters, you can run the `GRIDSEARCH.ipynb` notebook to explore and identify the best configuration.
+
+The `src/`  folder includes two python files: The `Evaluator.py` which defines the Evaluator class for performance evaluation and the `Utils.py` which contains all helper functions required for executing the pipeline.
+The `testing/` directory is a collection of different approaches we experimented with, such as edge and corner detection, connected components, background subtraction and morphological operations.
+
+This structure and workflow make it easy to extend, test, and refine the pipeline.
+
+## The pipeline
+
+Our pipeline is a 
 
 ## Results
 
@@ -106,9 +134,9 @@ Here are some example images after applying the pipline and evaluating the resul
 |------------------|------------------|
 | ![Image 2](results/images/8_result.jpg) | ![Image 3](results/images/9_result.jpg) |
 
-- Green boxes with green dots inside represent true positives: These indicate cases where our pipeline has correctly identified a target, and its prediction aligns with the ground truth.
-- Red boxes represent false positives: These are instances where the model has incorrectly identified a target, predicting something that isn't present in the ground truth.
-- Blue dots indicate false negatives: These occur when the model misses a target that is present in the ground truth, failing to make a prediction for it.
+- **Green boxes** with green dots inside represent true positives: These indicate cases where our pipeline has correctly identified a target, and its prediction aligns with the ground truth.
+- **Red boxes** represent false positives: These are instances where the model has incorrectly identified a target, predicting something that isn't present in the ground truth.
+- **Blue dots** indicate false negatives: These occur when the model misses a target that is present in the ground truth, failing to make a prediction for it.
 
 For more information regarding the evaluation please have a look into our Report about the project.
 
