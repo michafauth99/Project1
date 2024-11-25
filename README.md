@@ -55,6 +55,7 @@ In this project, we aim to develop a computer vision system to estimate the numb
 
 
 
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -162,3 +163,4 @@ Antoni Bennasar Garau - toni.benn.g@gmail.com
 [OpenCV-url]: https://opencv.org/
 [Python-badge]: https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
+
