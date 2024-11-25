@@ -27,11 +27,17 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#Setup">Set up project</a></li>
+        <li><a href="#set-up-project">Set up project</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#results">Results</a></li>
+    <li>
+      <a href="#results">Results</a>
+      <ul>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#performance-evaluation-table">Performance Evaluation Table</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -119,6 +125,8 @@ The pipeline processes raw beach images to detect humans by adapting to variatio
 
 ## Results
 
+### Images
+
 Results can be found in the `result/images` folder.
 Here are some example images after applying the pipline and evaluating the results:
 
@@ -143,6 +151,33 @@ Here are some example images after applying the pipline and evaluating the resul
 - **Blue dots** indicate false negatives: These occur when the model misses a target that is present in the ground truth, failing to make a prediction for it.
 
 For more information regarding the evaluation, please have a look into our report about the project.
+
+### Performance Evaluation Table
+
+| **Image**    | **Parameter Set** | **TP** | **FP** | **FN** | **Precision** | **Recall** | **F1**  | **RMSE** | **Accuracy** |
+|--------------|-------------------|--------|--------|--------|---------------|------------|---------|----------|-------------|
+| 0_empty      | below_130         | 0      | 4      | 0      | 0.00          | 1.00       | 0.00    | 4.0      | 0.00        |
+|              | best_params       | 0      | 0      | 0      | 1.00          | 1.00       | 1.00    | 0.0      | 100.00      |
+| 0            | below_130         | 1      | 3      | 0      | 0.25          | 1.00       | 0.40    | 3.0      | 25.00       |
+|              | best_params       | 1      | 0      | 0      | 1.00          | 1.00       | 1.00    | 0.0      | 100.00      |
+| 1            | below_130         | 11     | 12     | 11     | 0.48          | 0.50       | 0.49    | 1.0      | 47.83       |
+|              | best_params       | 15     | 15     | 7      | 0.50          | 0.68       | 0.58    | 8.0      | 50.00       |
+| 2            | below_130         | 28     | 13     | 23     | 0.68          | 0.55       | 0.61    | 10.0     | 68.29       |
+|              | best_params       | 44     | 25     | 7      | 0.64          | 0.86       | 0.73    | 18.0     | 63.77       |
+| 3            | over_130          | 99     | 62     | 35     | 0.61          | 0.74       | 0.67    | 27.0     | 61.49       |
+|              | best_params       | 96     | 35     | 38     | 0.73          | 0.72       | 0.72    | 3.0      | 73.28       |
+| 4            | over_130          | 105    | 91     | 30     | 0.54          | 0.78       | 0.63    | 61.0     | 53.57       |
+|              | best_params       | 108    | 80     | 27     | 0.57          | 0.80       | 0.67    | 53.0     | 57.45       |
+| 5            | over_130          | 127    | 74     | 44     | 0.63          | 0.74       | 0.68    | 30.0     | 63.18       |
+|              | best_params       | 123    | 58     | 48     | 0.68          | 0.72       | 0.70    | 10.0     | 67.96       |
+| 6            | over_130          | 142    | 64     | 39     | 0.69          | 0.78       | 0.73    | 25.0     | 68.93       |
+|              | best_params       | 142    | 64     | 39     | 0.69          | 0.78       | 0.73    | 25.0     | 68.93       |
+| 7            | below_130         | 152    | 31     | 81     | 0.83          | 0.65       | 0.73    | 50.0     | 83.06       |
+|              | best_params       | 164    | 40     | 69     | 0.80          | 0.70       | 0.75    | 29.0     | 80.39       |
+| 8            | below_130         | 182    | 27     | 63     | 0.87          | 0.74       | 0.80    | 36.0     | 87.08       |
+|              | best_params       | 181    | 23     | 64     | 0.89          | 0.74       | 0.81    | 41.0     | 88.73       |
+| 9            | below_130         | 163    | 28     | 72     | 0.85          | 0.69       | 0.77    | 44.0     | 85.34       |
+|              | best_params       | 175    | 28     | 60     | 0.86          | 0.74       | 0.80    | 32.0     | 86.21       |
 
 
 <!-- CONTACT -->
