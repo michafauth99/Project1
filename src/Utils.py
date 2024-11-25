@@ -26,6 +26,29 @@ def preprocess_image(image: np.ndarray, noise_reduction="Gaussian",filter_size=5
 
     return image
 
+def binarize_by_thresholding(img: np.ndarray, threshold: float) -> np.ndarray:
+    """Returns a binary version of the image by applying a thresholding operation."""
+    # YOUR CODE HERE:
+    #   ...
+    return (img >= threshold)*255
+    
+def binarize_by_hysteresis(img: np.ndarray, low_threshold: float, high_threshold: float) -> np.ndarray:
+    """Returns a binary version of the image by applying a hysteresis operation."""
+    out = np.zeros_like(img)
+    binary_img = binarize_by_thresholding(img, low_threshold)
+    _, label_img = cv2.connectedComponents(binary_img.astype('uint8'))
+    labels = np.unique(label_img)
+    for label in labels:
+        # YOUR CODE HERE:
+        #   See `np.any(...)` and `np.all(...)`.
+        #   ...
+        if label == 0:
+            # Ignore label of background
+            pass
+        elif np.any(img[label_img == label] >= high_threshold):
+            out[label_img == label] = 255
+    return out
+
 
 def substract_empty_beach(image):
     # load empty beach image
