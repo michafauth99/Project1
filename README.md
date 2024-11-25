@@ -160,5 +160,5 @@ Antoni Bennasar Garau - toni.benn.g@gmail.com
 <!-- MARKDOWN LINKS & IMAGES -->
 [OpenCV-badge]: https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white
 [OpenCV-url]: https://opencv.org/
-[Python-badge]: https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white
+[Python-badge]: https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
