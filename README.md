@@ -69,13 +69,13 @@ First we have to set up a conda environment with all the necessary packages:
   ```sh
     conda create --name Project1 --file requirements.txt
   ```
-* If necessary install this version with pip inside the conda env
-  ```sh
-    pip install opencv-contrib-python==4.5.5.64
-  ```
 * Activate conda environment
   ```sh
     conda activate Project1
+  ```
+* Now we have to install opencv version with pip inside the conda env
+  ```sh
+    pip install opencv-contrib-python==4.5.5.64
   ```
 
 
