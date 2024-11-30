@@ -137,7 +137,7 @@ The pipeline processes raw beach images to detect humans by adapting to variatio
 
 | Postprocessing          | Evaluation          |
 |------------------|------------------|
-| ![Image 2](images/postProcessing.png) | ![Image 3](results/images/final_result05.png) |
+| ![Image 2](images/postProcessing.png) | ![Image 3](images/final_result05.png) |
 
 ## Results
 
