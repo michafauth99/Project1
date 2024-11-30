@@ -123,6 +123,22 @@ This structure and workflow make it easy to extend, test, and refine the pipelin
 
 The pipeline processes raw beach images to detect humans by adapting to variations in brightness using intensity-based parameter sets. After preprocessing with noise reduction and contrast enhancement, it extracts the background using a moving average and hysteresis-based subtraction of static elements. Morphological operations refine object boundaries, followed by connected component analysis to label and generate bounding boxes for detected objects. Postprocessing filters bounding boxes based on size, shape, and overlap, employing non-maximum suppression for optimal detection. Finally, annotated results are saved for evaluation and visualization.
 
+| Preprocessing         | Background Substraction         |
+|-------------------|------------------|
+| ![Image 1](images/Preprocessing.png) | ![Image 2](images/BackgroundSubstraction.png) |
+
+
+
+| Morphological Operations        | Connected Components        |
+|------------------|------------------|
+| ![Image 2](images/Morph.png) | ![Image 3](images/connectedComponents.png) |
+
+
+
+| Postprocessing          | Evaluation          |
+|------------------|------------------|
+| ![Image 2](images/postProcessing.png) | ![Image 3](results/images/final_result05.png) |
+
 ## Results
 
 ### Images
